@@ -4,13 +4,13 @@ I'm a Software Developer and ML Engineer based in Brookline, MA, currently pursu
 
 ---
 
-### 🛠️ Main Skills
+## 🛠️ Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=python,typescript,javascript,cpp,java,react,nodejs,express,flask,pytorch,tensorflow,docker,aws,git,mongodb,redis,sqlite&perline=9)](https://skillicons.dev)
+**Languages:** Python · TypeScript · C/C++ · Java · JavaScript
 
-### 📚 Currently Learning
+**Frameworks & Tools:** React · Node.js · Express · Flask · PyTorch · TensorFlow · Docker · AWS · Nginx
 
-[![Learning](https://skillicons.dev/icons?i=kubernetes,graphql,nextjs)](https://skillicons.dev)
+**Databases:** MongoDB · Redis · SQLite · NoSQL
 
 ---
 
