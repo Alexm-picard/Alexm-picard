@@ -1,6 +1,6 @@
 # Hi, I'm Alex Picard 👋
 
-I'm a Software Developer and ML Engineer currently based out of the Boston area, and pursuing my MS in Software Development at Boston University. I love building things at the intersection of machine learning and full-stack engineering.
+I'm an ML Data Associate at Amazon, currently based out of the Boston area, and pursuing my MS in Software Development at Boston University. I love building things at the intersection of machine learning and full-stack engineering.
 
 ---
 
