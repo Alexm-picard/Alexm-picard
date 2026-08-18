@@ -1,22 +1,24 @@
 # Hi, I'm Alex Picard 👋
 
-I'm an ML Data Associate at Amazon, currently based out of the Boston area, and pursuing my MS in Software Development at Boston University. I love building things at the intersection of machine learning and full-stack engineering.
+I build and operate production ML systems end to end: training, serving, drift detection, and automated retraining. Currently an ML Data Associate II at Amazon, based in Boston, and completing an MS in Software Development at Boston University (2027). I love building things at the intersection of machine learning and full-stack engineering.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages:** Python · TypeScript · C/C++ · Java · JavaScript
+Languages: Python · TypeScript · JavaScript · Java · C/C++
 
-**Frameworks & Tools:** React · Node.js · Express · Flask · PyTorch · TensorFlow · Docker · AWS · Nginx
+Frameworks & Libraries: React · FastAPI · Spring Boot · Node.js/Express · Flask · PyTorch · TensorFlow
 
-**Databases:** MongoDB · Redis · SQLite · NoSQL
+Data & Infrastructure: PostgreSQL · pgvector · Redis · MongoDB · SQLite · Docker · AWS · Git
 
+AI / ML: Retrieval-augmented generation (RAG) · vector search (HNSW) · ONNX Runtime · LightGBM · LLM evaluation · PINNs
 ---
 
 ## 💼 What I'm Up To
 
 - 🤖 Working as an **ML Data Associate II at Amazon**, engineering high-quality training datasets for LLMs across classification, ranking, and adversarial testing tasks
+- ⚾ Building and operating The Bullpen in production
 - 🎓 Pursuing my **MS in Software Development at Boston University** (2025–2027)
 - 🔬 Previously a **ML Research Assistant** at UMaine's Advanced Structures and Composite Center, building multi-fidelity Physics-Informed Neural Networks in PyTorch
 
@@ -24,17 +26,17 @@ I'm an ML Data Associate at Amazon, currently based out of the Boston area, and 
 
 ## 🚀 Featured Projects
 
-### [Financial Planner Application](https://financial-planner.alexpicard.info)
-Full-stack personal finance web app built with React, TypeScript, Node.js/Express, and MongoDB. Features savings/debt tracking, automated payment scheduling, and Auth0 authentication.
+### [The Bullpen](https://thebullpen.net)
+Self-hosted baseball analytics platform serving four ML models (LightGBM pitch heads, 30-park multi-head MLP) from a Java 21 / Spring Boot API with in-process ONNX Runtime: p99 34 ms at a verified 300 req/s. Custom ML systems layer built without MLflow: versioned model registry with feature-schema-hash enforcement, shadow A/B routing, PSI and calibration drift detection, and a human-gated retraining queue proven end-to-end (unattended retrain on ~1.2M batted balls in 96.8 minutes, cutting per-park calibration error 10×). Operated with 2,400+ tests, CI-enforced temporal-leakage and ONNX parity checks, 28 Prometheus alerts, and drilled 25-minute restores.
 
-### [To-Do App (Cloud)](https://todo.alexpicard.info)
-Distributed microservices app using Docker Compose with 4 Flask-based services, 3 Redis instances, Nginx reverse proxy, and deployed on AWS EC2.
+### [StudyForesight](https://studyforesight.com)
+Production RAG study platform (FastAPI/Python, React 19/TypeScript, Postgres + pgvector): an LLM tutor that answers only from the user's own uploads (PDFs, image OCR, Whisper audio, Word docs), with every answer citing its source passages. Two-stage retrieval (pgvector HNSW search, then MMR reranking) fronted by a Redis semantic cache; fault-tolerant ingestion via dual paths (FastAPI background tasks plus a durable QStash queue) made idempotent with Redis SETNX; Postgres row-level security, per-provider circuit breakers, sliding-window rate limiting, and prompt-injection hardening. ~1,284 tests at 87% coverage.
 
 ### [Multi-Fidelity PINN](https://github.com/Alexm-picard/ECE471-Final-Project)
-Dual-network Physics-Informed Neural Network architecture in PyTorch combining low-fidelity analytical models and high-fidelity experimental data to predict concrete compressive strength.
+Dual-network physics-informed neural network architecture in PyTorch, combining low-fidelity analytical models with high-fidelity experimental data to predict concrete compressive strength.
 
-### [ASL Interpreter](https://github.com/Alexm-picard/ASL-Interpreter)
-American Sign Language recognition project built with Python and computer vision.
+### [Cloud Microservices To-Do App](https://github.com/Alexm-picard/COS-442-Cloud-Computing-Final-Project)
+Distributed microservices application: four Flask services behind an Nginx reverse proxy with three Redis instances, orchestrated with Docker Compose and deployed on AWS EC2. Built as the final project for COS 442 (Cloud Computing) at UMaine.
 
 ---
 
